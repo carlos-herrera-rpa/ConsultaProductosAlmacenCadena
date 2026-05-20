@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Hp-ZLMcLmUCwluQYcOq3Nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/microondas" CVScreenId="c05f3a13-92c3-4433-9a58-3b9a15dabbc6" CvElementArea="1487, 337, 32, 26" CvType="Icon" DesignTimeRectangle="1486, 329, 45, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Switch to list layout' aria-role='radio' tag='BUTTON' /&gt;" Guid="c9d9533c-00f8-40a0-b267-232b8f885a81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAmCAYAAABtT3M/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVFhH7ZahCsQwEETva/szlSEuviIUSgpVERGln1Cq6yurKvY4WBmRCws3XPbB2CFPTNgX/QEqgYJKoKASKKgECiqBgkqgoBIotCPxPA8dxyGW+765WYYiiXmeqes6sTjnuFmGIomUUvYxtRmGgZtl0GGj0I7EdV0UQhDLeZ7cLEORhPc+O9DaGGO4WYYiiX3fqe97sazrys0y6LBRaEdi27bsQGszTRM3y1AkMY5j9jG1sdZyswxFEp8rNsaY/fO/zbIsv7li0VEJFFQCBZXAgOgNe7UBqh2X4zgAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='firefox.exe' title='microondas - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ee2682dce1a5c4979ecc521d249481f9.png" xmlns="">0xC6E_ovwxUif9ljomCcchA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

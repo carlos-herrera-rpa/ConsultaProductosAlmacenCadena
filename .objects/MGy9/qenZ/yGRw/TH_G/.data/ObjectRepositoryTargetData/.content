@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IUnYGuJgO067WBbnx0ARxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exito.com/s" CVScreenId="101203df-4280-4d5c-bb78-f4caa3245efb" CvElementArea="1562, 961, 199, 49" CvTextArea="1631, 979, 60, 17" CvTextArgument="Acepto" CvType="Button" DesignTimeRectangle="1565, 964, 193, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Acepto' parentid='__next' tag='BUTTON' /&gt;" Guid="ee67e9d7-89a8-4e4d-932a-8187f0a8a506" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | Search Results' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-2" Y="2" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="877c38c521e29ee0f9941aba5da29659.png" xmlns="">00a1SyDZkwECX4rtJESGdMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iKE5DI2UfEm1RRFf_vK8mA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/computador%20port%C3%A1til%20asus%20vivobook%2016" CVScreenId="27405274-ad2b-4262-83c1-485475d91380" CvElementArea="1300, 188, 70, 40" CvType="Button" DesignTimeRectangle="1302, 192, 66, 34" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" Guid="cbdfd69a-21dc-4b67-9ab1-418a6b7ccafb" ScopeSelectorArgument="&lt;html app='firefox.exe' title='computador portátil asus vivobook 16 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-3" Y="-6" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="33b02c05392c36a056dcd87b2e86c75b.png" xmlns="">0WGz9v8GHZUOCkGQZPpXz0g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

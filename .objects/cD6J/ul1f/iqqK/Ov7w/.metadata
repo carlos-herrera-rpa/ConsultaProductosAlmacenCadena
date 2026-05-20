@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cerrar",
+  "Type": "Element",
+  "Id": "Ov7wTEnanE6kHLHPFB2tuw",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/Ov7wTEnanE6kHLHPFB2tuw",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/iqqKQ2pb90OZiyoqZJS1fw",
+  "Created": "2026-05-05T17:57:08.876033Z",
+  "Updated": "2026-05-05T17:57:08.876033Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

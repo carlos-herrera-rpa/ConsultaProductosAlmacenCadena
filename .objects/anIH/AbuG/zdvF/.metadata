@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Firefox Mercado Libre Colombia - Envíos Grati",
+  "Type": "Screen",
+  "Id": "zdvFYtIOuUCQQh94gjHa0A",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/zdvFYtIOuUCQQh94gjHa0A",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/AbuGLGq33EupwcBIxm694A",
+  "Created": "2026-05-12T18:23:31.6111738Z",
+  "Updated": "2026-05-12T18:23:31.6111738Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

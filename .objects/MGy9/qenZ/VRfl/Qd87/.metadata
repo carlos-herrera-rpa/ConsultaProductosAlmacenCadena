@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sugerencias comedorcom…",
+  "Type": "Element",
+  "Id": "Qd871PT12EGHRw0NhMRWIA",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/Qd871PT12EGHRw0NhMRWIA",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/VRflTJnSb02fD_FfH4nrmQ",
+  "Created": "2025-12-03T02:03:51.2874705Z",
+  "Updated": "2025-12-03T02:03:51.2874705Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Buscar en exito.com",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "RHYEeSnCX0uWXrJY03tKkw",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/RHYEeSnCX0uWXrJY03tKkw",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/yGRw8QK4u0yrACrY7NnAiQ",
+  "Created": "2026-05-06T13:04:23.9816365Z",
+  "Updated": "2026-05-06T13:04:23.9816365Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

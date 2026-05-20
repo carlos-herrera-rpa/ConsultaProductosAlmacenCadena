@@ -1,0 +1,14 @@
+﻿{
+  "Name": "core i5",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8xtF0mOM70ubTcuDBpaDxw",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/8xtF0mOM70ubTcuDBpaDxw",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/VRflTJnSb02fD_FfH4nrmQ",
+  "Created": "2025-12-01T18:06:54.809306Z",
+  "Updated": "2025-12-01T18:06:54.809306Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

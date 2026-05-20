@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UvlwroFkfU-hOu358HFRQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="alkosto.com" DesignTimeRectangle="1695, 168, 49, 53" ElementVisibilityArgument="Interactive" Guid="5a9ce131-4798-4272-97d4-70f4c5e7e0c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAA1CAYAAADoDQMKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVGhD7ZfLaxRBEIfzzwiC4EEQQTwEREUQL4IX8QkhRhTjA8UI4kFRkA0ogoh6CUEwIJ4E8wBBvbgXkUA8CBoEn5mdnc1mH9ndbNm/2p5hA0adqoG00h80G3pneuvrqump9PTsuEP//KD/AC/hCl7CFbyEK3gJV/ASruAlXMFLuELmEu16ler5Z1S+N0SlXD+PhZErtPj2hb0iezKTQPDzt0/R3IG1NLdvzS9HcGgdVR7liJoNe1c2ZCLReJenoG9DEmgpd5Sz0fr+iUdtcpSKl/cmgoXjW2gp+Gzv1qOWaL5/kwSHTCAjK4HAi5f2dGSN9FL0w36jQyWBIOIM1KYe2tk/U757nu8Jz2zLpLRUEtH1wxwMHty0RFf3872Vx7fsjByxROvrRw6icGyzaDeRRZRhcGS9OhtiCewg7yROGyGl4QFeYzE/bmdkiCXiUsKDLaX69AGvISnHbsQS4WAvB6Aphcb0K16jdKPPzsjQSyjg49msgaxqkJeTPV2aH6btTHpwLGONVSsn/DACQF1Lmb95gteoPR+zMzLEEo2Z1xxAeG6nnUlHuxzx8YpjFn9rEEuA4oVdnZ1M8baOid/a+NSikkj6JjPQBP4t8bOAlkWbBaCSAKhnBASR6viInV0BcxyX719Mrte8Y7pRSwB+aSEjJrjCyV6qTYyajvWL/da0KKYdr4wNU9C/sZMB064jc+hq6y+f2KvkZCIBmrMzFJ7e2tnl34zo2sGkBY/bDpxSGjKTiGl9m+XjNzy7nQoDm3gUh3ZzJtoLy+u/u5XXiGQukZZuEWn7seoSQCvihARYVlrm39w0OCMBWMScYGmz4ZSEFC/hCl7CFbyEK3gJV/ASruAl3IDoJ3u0R7pviMg9AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="42e6464268be02ffe703a515d72561c3.png" xmlns="">0BjQ9kx_SwkWWd_2Av1d59Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

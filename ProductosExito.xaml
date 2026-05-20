@@ -1,0 +1,347 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProductosExito" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_RutaExcel" Type="InArgument(x:String)" />
+    <x:Property Name="In_Consulta" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ProductosExito_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ProductosExito" sap:VirtualizedContainerService.HintSize="678.8000000000001,3892.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd3:DataTable" Name="dt_ProductosExito" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log - Inicio de búsqueda" sap:VirtualizedContainerService.HintSize="673.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Iniciando búsqueda de: &quot; + In_Consulta]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="673.6,3695.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="672,2859.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Search exito.com for products and save results to Excel" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="638.4,2799.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9ad476b6-109b-46f0-81e0-4b8e212e322d" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="636.8,2605.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click SVG icon on exito.com website" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ad476b6-109b-46f0-81e0-4b8e212e322d" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="exito.com" CVScreenId="0465e7ad-48f4-471f-8140-1ee5fd4973f5" ContentHash="YHPFBfK0gU6kCNVb4AK7aA" CvElementArea="1167, 179, 43, 40" CvType="Icon" DesignTimeRectangle="1177, 183, 29, 29" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" Guid="bc737ac5-a574-49f6-8808-02d97458099f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANTSURBVFhH1ZfdSxRhFMb3X5jNaI2VMCPahNASlz4WCbeNvBRbJWyRkPUbgiJwb7wLsYuu6qbLCOrCsCRIxS7T/NZccf1ILU0tMATLLorTPIMzzvvOGZ3dFqKLh2HOe855fr5fs7pabrvoX+v/g7h/9yh1dtyksfF2WllL0Ob2Fv349Vt74h1xjCOPq7eTI4hHDy5oBjB0KuSjjusnyxWNRmkvdfe+YU2cCvU1NTVsb122EM2xGE3Pf2AbJyv0QT/OB2IhUPBxdY1tmKrQzw6EhUjHDCx9XqVPa+tCDH25pbFAcHvgVVcXvR0YtMTtNDQ2TrW1tZrh9Py8MIb+sqcA0drWJhRAr3t6tGZo6gQEAHV1dVpNQ0MDrXz5asmBj9lXgOgfGrYUTCYS1NjYaIAMjIxacnSNTLyn+vp6LRfPsfgUmwcfs68BgU3DFUBmEPyVHAgMzQAAknPMMm9SA+LJ02dssi6AYHo5EADoY04AIPhZILilkGU2AwjMuBhXK8u8JAYEjhSXLGt0Mi6YOt0vsuBngdjc/skmczKvvw6TDAAEPwsEl2indEBAFginMyHvgVSXg50JJ3sinRuT3RP7nY50H1H2dOx1T6RyWeFdzjGLvSfsbsxUr23MzF4g7I0JyUuyvvGNmpqaDIC+wSFhnJP8AZM/55B5KSABQv6K4guoAyTzKR8en9BqUDuzsGAZt3xFi8tvCIHu3k6hYG5piRaWV4SYE2H3zy4uWuIPH3cIfpBLcR+mUyWR3WBlgN45mPZU1K/2dZ+8LABAruwMhRT3MboYUQMVAco5lEH5+fk0NSf+IvpbJdR+6KscOEgej4c8OQGq0CEiRTmkKAplFpQaEG71Pe90AfXtc3c41fRMnIoKz2h9LRDVZerGVKc/G4PZAapEMOwnL959IY0ybf93SH11XTt/BKcjRD4Mev0UZiCg1lvX6fmLl6yJnXoHhsVTwEJU0NksZf+Z0BTyaUuWp67pneYYtatA8ZlZ2tj6rhniObu8qp7/frrXElPzLlHIMNoRCxEmv1eFwHTAwOsP2yfvQBw6cY6CwSCjK3S1arepoviSg8hyqwMZapHWxCa5qpiOI89bSGXVOzEoUkL+3FzKzQtSuRZLFiJKpQWZ9AfoYcDS7/HRlQAAAABJRU5ErkJggg==" InformativeScreenshot="64c32e42d372142001c6b49e4a4fce42.png" Reference="cWM6iDUoS0uN0zK79p57BQ/0u1n7BYBKUycbMoV2bxqfA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayBefore="1" DisplayName="Click 'Acepto' button on webpage" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ad476b6-109b-46f0-81e0-4b8e212e322d" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="exito.com" CVScreenId="0e593bc7-3e11-412b-8ea2-999a371ddfa8" ContentHash="VHZmRSugVEe-K1qdIWKoNw" CvElementArea="1530, 961, 199, 49" CvTextArea="1599, 977, 60, 20" CvTextArgument="Acepto" CvType="Button" DesignTimeRectangle="1533, 964, 193, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Acepto' parentid='__next' tag='BUTTON' /&gt;" Guid="db8c1c1e-e29f-432d-8f41-8b5452365353" InformativeScreenshot="09640575694853aa1409615815092822.png" Reference="cWM6iDUoS0uN0zK79p57BQ/Q9BTFHR8O0OlrSOvkaXJkQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="9, 932, 1899, 107" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='SECTION' class='styles_fsCookiesModal__0jD9C' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Manejo de cookies&amp;#xA;&amp;#xA;Al continuar navegando por el sitio web, aceptas el uso de cookies propias y de terceros con el fin de identificar tus patrones de navegación, realizar personalizaciones de contenido y mostrarte publicidad de acuerdo a tus preferencias. Para conocer más, accede a nuestra política de cookies.&amp;#xA;&amp;#xA;Acepto' /&gt;" Guid="7d9e6559-5d1f-40d6-9f0b-1e1b5a777f47" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset Y="3" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type product query into web search field" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="9ad476b6-109b-46f0-81e0-4b8e212e322d" Text="[string.Format(&quot;{0}[k(enter)]&quot;, In_Consulta)]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="exito.com" CVScreenId="e45bda02-569f-42bb-975e-8f87414c02a0" ContentHash="fvKtjOwB00mmhUP-2k_-yg" CvElementArea="458, 127, 484, 44" CvType="InputBox" DesignTimeRectangle="458, 128, 485, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" Guid="5a96f7b0-06f6-4abc-b2df-b7f260c55425" InformativeScreenshot="f7a7986d5ca0c6a61aec3fca7fd5b6a3.png" Reference="cWM6iDUoS0uN0zK79p57BQ/xxwfVt_8B0ODrJcBQdmygw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b11cd517-a325-48e9-908f-f6c4ca5859cb" CvTextArea="476, 140, 187, 18" CvTextArgument="Buscar en exito.com" CvType="Text" DesignTimeRectangle="476, 140, 187, 18" ElementType="Text" Guid="2f18fc77-d085-4fd9-8858-d5965fc18997" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable1" ContinueOnError="True" DelayBefore="3" DisplayName="Extract product data from a web page" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Marca'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Descripcion'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Costo Efectivo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.ProductPrice_container__price__XmMWA.ProductPrice_text14___ZxlL' name='Column2' attr='fulltext' /&gt;&lt;/extract&gt;" ExtractedData="[dt_ProductosExito]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,142.4" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9ad476b6-109b-46f0-81e0-4b8e212e322d" Version="V5">
+                    <uix:NExtractDataGeneric.NextLink>
+                      <uix:TargetAnchorable BrowserURL="exito.com/s" CVScreenId="ce44d711-2078-4dcc-9327-853dbf78a9aa" CvTextArea="1185, 501, 83, 21" CvTextArgument="Siguiente" CvType="Text" DesignTimeRectangle="1188, 499, 81, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Siguiente' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Siguiente' parentid='__next' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Siguiente' /&gt;" Guid="d879c8af-05b9-4531-845e-afb54f7bf033" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | Search Results' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="ce44d711-2078-4dcc-9327-853dbf78a9aa" CvElementArea="1276, 498, 23, 25" CvTextArea="1185, 501, 83, 21" CvTextArgument="Siguiente" CvType="ArrowButton" DesignTimeRectangle="1188, 499, 107, 25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Próxima Pagina' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Próxima Pagina' tag='BUTTON' type='' class='Pagination_nextPreviousLink__f7_2J' aaname='Siguiente' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Siguiente' /&gt;" Guid="4189d87a-337b-48d3-9a89-4511943fb380" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset X="0" Y="0" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NExtractDataGeneric.NextLink>
+                    <uix:NExtractDataGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.exito.com/s?q=core+i5&amp;sort=score_desc&amp;page=0" ContentHash="0mSmh7t2G0-NY7t4jzEUDQ" DesignTimeRectangle="526, 419, 1182, 2037" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='__next' tag='UL' /&gt;" Guid="b0c12602-52a2-42ff-bf66-44d6f5a4fbb9" InformativeScreenshot="9bd2276d0e10d4a8697d45bfddfd89bc.png" Reference="cWM6iDUoS0uN0zK79p57BQ/skh4_mliNk6F45Owc0k0eA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | Search Results' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NExtractDataGeneric.Target>
+                  </uix:NExtractDataGeneric>
+                  <If Condition="[dt_ProductosExito IsNot Nothing AndAlso dt_ProductosExito.Rows.Count &gt; 0]" DisplayName="If  - Verificar si se encontraron productos para guardar" sap:VirtualizedContainerService.HintSize="603.2,1605.6" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="601.6,1241.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log - Productos encontrados" sap:VirtualizedContainerService.HintSize="568,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Productos encontrados: &quot; + dt_ProductosExito.Rows.Count.ToString()]" />
+                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Open Excel and clear a specific sheet" sap:VirtualizedContainerService.HintSize="568,693.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                          <ueab:ExcelProcessScopeX.Body>
+                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,575.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Open Excel and clear a sheet" sap:VirtualizedContainerService.HintSize="500.8,515.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" UseTemplate="True" WorkbookPath="[In_RutaExcel]">
+                                  <ueab:ExcelApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,199.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:ClearRangeX DisplayName="Clear a specific Excel sheet" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,139.2" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Exito&quot;)]" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelApplicationCard.Body>
+                                </ueab:ExcelApplicationCard>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelProcessScopeX.Body>
+                        </ueab:ExcelProcessScopeX>
+                        <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dt_ProductosExito]" DisplayName="Write extracted product data to Excel" sap:VirtualizedContainerService.HintSize="568,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Exito" WorkbookPath="[In_RutaExcel]" />
+                        <ui:LogMessage DisplayName="Log - Archivo guardado" sap:VirtualizedContainerService.HintSize="568,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Archivo guardado exitosamente&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="601.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log - Error en extracción" sap:VirtualizedContainerService.HintSize="568,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;No se encontraron productos para: &quot; + In_Consulta]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <uix:NWindowOperation DisplayName="Close the product query application window" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,164.8" sap2010:WorkflowViewState.IdRef="NWindowOperation_1" Operation="Close" ScopeIdentifier="9ad476b6-109b-46f0-81e0-4b8e212e322d" Version="V5" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Firefox" ContentHash="CPfdr2K9zE6mnzn6r83HYw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC1klEQVQ4TzWTSWtUWxSFv3O7qlhVWjYxUZ4+wfeIooigICKI4B/wH2RkBsoDnegTsXvOnPgXHIsTBXUsNkhEbBDiILalSayQTlPdbc5xnUre5Z7b7LPP2mvvvbZxX4ccYUqWLIPJiYsArNW3A332AkOv2Merl3s4/c9tPn7P6fQAbfvLuKl1zh+0Qao/S6CzuBUAq8Mpa2lMb+XihQnuPoR09eDKcbl153ChNURpsmrKFbnoR88ZoPG9xsUrTe49EG4c0c49Q7narE/DdARQMkJqh/oXiJWDv5zebj3N6YTRsUmev4OO/HomlrMnmBGKjcmnxaAcU7RkyLQZDsOC3jNi0hbQ5kE+fS44dfk1jz9ASyYfol6BwfUeaEbJhjG2yLWxFSaqTN1/z+RL5duByhDsOjpCs7qTMzceMP4JugI4fgz+PTeKyZqhc84QmzUwvZmJa5PMPoNotZY+WkuRDoyNsDg8wMn/XjM0Ateu72XTYKDUZ3wNSgR5lfYTy5tLC1S/VVSKAKs8SyZlaY2qdlj3+YM0WcRtLKjV5zDmpxhM4SJfmG6db3dm+XBTaS/VKVxIUg7p5Iv06im//hDtC3rsN9jyD3U6xYieaqBeFALo1ek+6vHi+k82zA2owhVyCarHMu1aSrIfDp1Vgf+eg5pa6PXgu+CaJUeuvqQD8LHK+NUG2VtYWyREtqzeW+YrywyfgL/GtsO6GSh70f0P8KMqBmqZlQ5ag/DUMX7rC92GTJJsJNxtRwx/ju5QdNXfLMiod+T596UsAGmOQLRMDea1vmZ0Gi1mm7/YsnsD8ZCchz2ahOETl95dUuDHRjVIHM5LVysqK5WSlm+iQvcptMk1bMZIaH3aekilNrIrANm8L6L8Ch0yAjCel1amAcs7WNXXSbOxL5rMuTL1AxfkCmQT6WBJbVQGceaHSQCBPNOWUC1GpqxPUwH8APnxVhwPEHel5aLMbygsQXCIFy6OAAAAAElFTkSuQmCC" InformativeScreenshot="35b361b38def564b91b1010c162d394b.png" Reference="cWM6iDUoS0uN0zK79p57BQ/XDouBeSRx0uYlIvy9aAkxw" Selector="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" Url="https://www.exito.com/" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="672,225.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Error crítico en extracción" sap:VirtualizedContainerService.HintSize="638.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;Error en ProductosExito: &quot; + exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="672,478.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open exito.com in Firefox, then close it" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="638.4,418.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" ScopeGuid="046a40d0-162b-4ed4-9ae1-eded451be30d" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,224.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NWindowOperation DisplayName="Window Operation - Close window" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,164.8" sap2010:WorkflowViewState.IdRef="NWindowOperation_2" Operation="Close" ScopeIdentifier="046a40d0-162b-4ed4-9ae1-eded451be30d" Version="V5" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Firefox" ContentHash="CPfdr2K9zE6mnzn6r83HYw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC1klEQVQ4TzWTSWtUWxSFv3O7qlhVWjYxUZ4+wfeIooigICKI4B/wH2RkBsoDnegTsXvOnPgXHIsTBXUsNkhEbBDiILalSayQTlPdbc5xnUre5Z7b7LPP2mvvvbZxX4ccYUqWLIPJiYsArNW3A332AkOv2Merl3s4/c9tPn7P6fQAbfvLuKl1zh+0Qao/S6CzuBUAq8Mpa2lMb+XihQnuPoR09eDKcbl153ChNURpsmrKFbnoR88ZoPG9xsUrTe49EG4c0c49Q7narE/DdARQMkJqh/oXiJWDv5zebj3N6YTRsUmev4OO/HomlrMnmBGKjcmnxaAcU7RkyLQZDsOC3jNi0hbQ5kE+fS44dfk1jz9ASyYfol6BwfUeaEbJhjG2yLWxFSaqTN1/z+RL5duByhDsOjpCs7qTMzceMP4JugI4fgz+PTeKyZqhc84QmzUwvZmJa5PMPoNotZY+WkuRDoyNsDg8wMn/XjM0Ateu72XTYKDUZ3wNSgR5lfYTy5tLC1S/VVSKAKs8SyZlaY2qdlj3+YM0WcRtLKjV5zDmpxhM4SJfmG6db3dm+XBTaS/VKVxIUg7p5Iv06im//hDtC3rsN9jyD3U6xYieaqBeFALo1ek+6vHi+k82zA2owhVyCarHMu1aSrIfDp1Vgf+eg5pa6PXgu+CaJUeuvqQD8LHK+NUG2VtYWyREtqzeW+YrywyfgL/GtsO6GSh70f0P8KMqBmqZlQ5ag/DUMX7rC92GTJJsJNxtRwx/ju5QdNXfLMiod+T596UsAGmOQLRMDea1vmZ0Gi1mm7/YsnsD8ZCchz2ahOETl95dUuDHRjVIHM5LVysqK5WSlm+iQvcptMk1bMZIaH3aekilNrIrANm8L6L8Ch0yAjCel1amAcs7WNXXSbOxL5rMuTL1AxfkCmQT6WBJbVQGceaHSQCBPNOWUC1GpqxPUwH8APnxVhwPEHel5aLMbygsQXCIFy6OAAAAAElFTkSuQmCC" InformativeScreenshot="35b361b38def564b91b1010c162d394b.png" Reference="cWM6iDUoS0uN0zK79p57BQ/XDouBeSRx0uYlIvy9aAkxw" Selector="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" Url="https://www.exito.com/" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

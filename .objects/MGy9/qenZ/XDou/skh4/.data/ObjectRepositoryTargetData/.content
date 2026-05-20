@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0mSmh7t2G0-NY7t4jzEUDQ" Reference="cWM6iDUoS0uN0zK79p57BQ/skh4_mliNk6F45Owc0k0eA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.exito.com/s?q=core+i5&amp;sort=score_desc&amp;page=0" ContentHash="LbZxpRz2-0mQjsRhC7H0yA" DesignTimeRectangle="526, 419, 1182, 2037" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='__next' tag='UL' /&gt;" Guid="b0c12602-52a2-42ff-bf66-44d6f5a4fbb9" Reference="cWM6iDUoS0uN0zK79p57BQ/skh4_mliNk6F45Owc0k0eA" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | Search Results' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9bd2276d0e10d4a8697d45bfddfd89bc.png" xmlns="">0rfT-PztRCUCaYxEBMi6uMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Marca'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Descripcion'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Costo Efectivo'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="exito.com/s" CVScreenId="ce44d711-2078-4dcc-9327-853dbf78a9aa" CvTextArea="1185, 501, 83, 21" CvTextArgument="Siguiente" CvType="Text" DesignTimeRectangle="1188, 499, 81, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Siguiente' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Siguiente' parentid='__next' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Siguiente' /&gt;" Guid="d879c8af-05b9-4531-845e-afb54f7bf033" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | Search Results' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ce44d711-2078-4dcc-9327-853dbf78a9aa" CvElementArea="1276, 498, 23, 25" CvTextArea="1185, 501, 83, 21" CvTextArgument="Siguiente" CvType="ArrowButton" DesignTimeRectangle="1188, 499, 107, 25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Próxima Pagina' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Próxima Pagina' tag='BUTTON' type='' class='Pagination_nextPreviousLink__f7_2J' aaname='Siguiente' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Siguiente' /&gt;" Guid="4189d87a-337b-48d3-9a89-4511943fb380" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="0" Y="0" />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

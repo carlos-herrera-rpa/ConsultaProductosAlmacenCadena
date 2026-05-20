@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e0prmDkYHkKRfDTatySP3g" Reference="cWM6iDUoS0uN0zK79p57BQ/vJaFyolVbk-bvKpqk-xvtQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/computador%20port%C3%A1til%20asus%20vivobook%2016" CVScreenId="b76435de-0cd8-47d0-b4eb-16206bc7bb12" CvElementArea="722, 188, 582, 39" CvType="InputBox" DesignTimeRectangle="723, 192, 579, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2  br-0 br--left  w-100 bn outline-0 bg-base c-on-base b--muted-4 hover-b--muted-3 t-body pl5 ' placeholder='¿Qué estás buscando?' aaname='¿Qué estás buscando?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6d7bb2f7-4fec-4845-bdc5-b8b3d68c6485" ScopeSelectorArgument="&lt;html app='firefox.exe' title='computador portátil asus vivobook 16 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b76435de-0cd8-47d0-b4eb-16206bc7bb12" CvElementArea="1300, 188, 70, 40" CvType="InputBox" DesignTimeRectangle="1323, 194, 18, 18" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" Guid="3e5f145d-b160-481c-8f56-35d51ba8c789" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c3309e819738098cc9400dd5a7c158d7.png" xmlns="">053Byxxb-A0WeFU_WJRhM6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

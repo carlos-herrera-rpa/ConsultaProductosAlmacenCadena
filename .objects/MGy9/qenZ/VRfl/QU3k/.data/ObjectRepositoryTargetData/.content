@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9QxOVIcuiE282Y60MVUovA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/core%20i5" CVScreenId="8c8c8d1b-312d-4476-821f-434ca59acc00" CvElementArea="1429, 367, 28, 24" CvType="Icon" DesignTimeRectangle="1435, 374, 18, 12" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl href='#mpa-list-items' tag='use' /&gt;&lt;webctrl shadowhostid='' tag='path' /&gt;" Guid="295c206e-e0b8-4c21-9e07-2c8025a1afb6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABCSURBVDhPY/hPI0B7g+vr6/+npaVRhBsbG6GmIRk8Z84crIpJwZMnT4aaRo+goDYYjTyoaaORhwRGIw8OaGTw//8AE7O+aMtNLhIAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='firefox.exe' title='core i5 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1380, 361, 88, 38" FullSelectorArgument="&lt;webctrl aria-role='radiogroup' tag='DIV' /&gt;" Guid="e0007f65-f838-4d40-a3a2-710fcd618a42" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAqCAYAAAA+lDyEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEoSURBVGhD7dc7CsJQEIVha1chCCI2KoiCaGMaV5JthJTWwQcY3ISFYOFCBNcyErgRvUkxksuBMOeDaWRI8Rcm0xGCYnAwBgdjcDAGB2NwMAYHY3AwBgdjcDAGB2NwMFXw6/Muk3Mk3V3vZ6Z5JLfXw23p9yxTBe/vF5WI5YxOa7cl0stmtTvFfO9ZpgpeRvP5v2v3LDMRPEkSieO40aRp6p7WjIngeZ7XRvxnsixzT2uGfylgquCDw/ITzZ/hceW29HuWqYIXn3vj86YScX7ZVj4LNXuWqYK3Xetemm3XupcmL81wVMF5aYajCl5G8/m/a/csMxGclyYYL03DVMF5aYajCs5LMxxVcAqHwcEYHIzBwRgcjMHBGByMwcEYHIzBwRgcjMGhRN46+Nbfx97BtwAAAABJRU5ErkJggg==" SearchSteps="Selector, Image" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="785b5dceafb7a73abbbb7f34fcf9c319.png" xmlns="">0VumgLNmNcEeRZql5kv3JgQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

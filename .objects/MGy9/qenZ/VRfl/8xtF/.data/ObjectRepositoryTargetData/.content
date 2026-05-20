@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XLfHTHN25UC5HrlDwaguCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/core%20i5" CVScreenId="46b53fde-c2d5-408c-8c38-69da44da36da" CvTextArea="115, 320, 88, 22" CvTextArgument="Core i5" CvType="Text" DesignTimeRectangle="115, 316, 87, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="22f30480-f49c-436d-a3d9-3c3dbf915935" ScopeSelectorArgument="&lt;html app='firefox.exe' title='core i5 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d3081894140db8265dbe9e64d3857fc3.png" xmlns="">05GxhIZxz6UWc7OwWIHA1qA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

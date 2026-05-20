@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_uV0EZ4tREikLKz_8sfV6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="alkosto.com" CVScreenId="7bc1986f-b165-4b0b-8cf3-32d913a35d70" CvElementArea="715, 245, 602, 47" CvType="InputBox" DesignTimeRectangle="717, 247, 600, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='js-algolia-site-search-input' tag='INPUT' /&gt;" Guid="c46fbe75-0901-4fcf-87d7-562a5df71557" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="04f58e4f60c8bdf4e376c64a4380f4af.png" xmlns="">0vZJenqF4WkCKCmMibxYp6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

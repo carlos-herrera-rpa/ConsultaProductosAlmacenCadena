@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Firefox computador portátil asus vivobook 16 ",
+  "Type": "Screen",
+  "Id": "VRflTJnSb02fD_FfH4nrmQ",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/VRflTJnSb02fD_FfH4nrmQ",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/qenZ48YXtkWcF5ZmWvXNDg",
+  "Created": "2025-12-01T01:22:55.8373955Z",
+  "Updated": "2025-12-01T01:22:55.8373955Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

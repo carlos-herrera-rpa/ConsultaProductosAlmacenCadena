@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gffoI45f_0itKNIf58j1jg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/core%20i5" CVScreenId="b7010663-0202-49be-99a4-f9bcdefc0674" CvElementArea="1434, 394, 31, 30" CvType="Icon" DesignTimeRectangle="1439, 400, 21, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl href='#mpa-gallery' tag='use' /&gt;&lt;webctrl shadowhostid='' tag='path' /&gt;" Guid="2cc4ff86-c674-431b-99d3-415dd31966af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHcSURBVEhL7ZTNyzFhFIffv9ZHIbHBRolSLBQlG0nZUBZIUUqEnShFobBAJAvlo+Q8/c7M3M98vRZved7Nc9VZ3HOu8Zt7xrn/0A+gCTmfz9RsNqlSqWiq3W7T9XqVLYnn80mDwcDg1ut12m63siUhQna7HTmdTrJYLKYVCATofr+z+3q9KBqNmnoom81Gs9mMXSBCSqUSCx6Ph2KxmKYcDgf3er0eu4vFQvyg3vX7/Xw9lUqxC0RIPp/nZiaTka98EwqFuNdoNHg9mUx4jSfWU61WuYedKvyG/FtIsVjk5rsP3+l02J3P57xG6V3lwycSCXaBCFmv1+RyucTN+sLNmCPweDwoEomYeii73U7D4ZBdIELAu2G83W6yJYFh7Pf7BhfDuN/vZUtCE/IpNCGY5NVqxdOqLv0xoXA6nQzucrnkXaoRITibwuGw6TtGpdNpfgiFcrls6qF8Ph8dj0fZVIUof713NRqN2MXOzPrqymaz7AIR8jvxev5/SKFQ4GYwGDQMmNfr5V6r1WJ3Op3y2mq1Gtx4PM49HDEKIgTHAJp/KxwVm82G3cvlQm6329RTqlarsQtECBiPx5RMJg2HHl4hhlTN4XCgXC5ncHEwdrtd2ZLQhHyKHwgh+gLNTMSevf7yZAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='firefox.exe' title='core i5 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-4" Y="1" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6df2bf4f6cc806b89ac32e29af2660b7.png" xmlns="">0wqtA6AfhTkyUJHQUkDaOoQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

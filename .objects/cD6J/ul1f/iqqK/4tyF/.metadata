@@ -1,0 +1,13 @@
+﻿{
+  "Name": "¿Qué buscas hoy",
+  "Type": "Element",
+  "Id": "4tyFOH950kKWTLAP8anCjQ",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/4tyFOH950kKWTLAP8anCjQ",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/iqqKQ2pb90OZiyoqZJS1fw",
+  "Created": "2026-05-05T16:46:50.2891836Z",
+  "Updated": "2026-05-05T16:46:50.2891836Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

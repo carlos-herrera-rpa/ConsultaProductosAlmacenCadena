@@ -1,0 +1,349 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProductosAlkomprar" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_RutaExcel" Type="InArgument(x:String)" />
+    <x:Property Name="In_Consulta" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ProductosAlkomprar_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ProductosAlkomprar" sap:VirtualizedContainerService.HintSize="678.8000000000001,3661.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log - Inicio de búsqueda" sap:VirtualizedContainerService.HintSize="673.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Iniciando búsqueda de: &quot; + In_Consulta]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="673.6,3464" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="672,2628" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Search Alkosto for products, extract details, sort, and save." HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="638.4,2568" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="780595bd-461a-403c-8487-a4221ceda0ac" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="636.8,2374.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="dt_ProductosAlkosto" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click search input field on a webpage." HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="780595bd-461a-403c-8487-a4221ceda0ac" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="alkosto.com/search" CVScreenId="7a0955b5-f38f-4bc2-be53-fe0d16b01768" ContentHash="ZQGXlx6rTkaRkTGqIy7wTA" CvElementArea="683, 167, 601, 48" CvType="InputBox" DesignTimeRectangle="685, 167, 598, 47" ElementVisibilityArgument="Interactive" Guid="236dea1f-9802-4855-ba12-4e20241e3e7c" InformativeScreenshot="fbcb0688eff2f00a645cad71d0776f05.png" Reference="cWM6iDUoS0uN0zK79p57BQ/4tyFOH950kKWTLAP8anCjQ" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resultados de la búsqueda &amp;quot;core i5&amp;quot; | Alkosto Hiperahorro' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="7a0955b5-f38f-4bc2-be53-fe0d16b01768" CvTextArea="729, 181, 135, 20" CvTextArgument="¿Qué buscas hoy?" CvType="Text" DesignTimeRectangle="729, 181, 135, 20" ElementType="Text" Guid="edab5294-b575-45ed-8266-d9264fdb83a6" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DisplayName="Type text into a web search field" EmptyField="True" sap:VirtualizedContainerService.HintSize="603.2,188" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[In_Consulta]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ef7390b-5d0d-496c-b816-c9b8eb753394" InformativeScreenshot="683abde31621f66aa69176f9ff8f048e" Selector="&lt;webctrl aria-labelledby='autocomplete-0-label' tag='INPUT' type='search' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Cerrar' button on the webpage" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="780595bd-461a-403c-8487-a4221ceda0ac" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="alkosto.com" ContentHash="UvlwroFkfU-hOu358HFRQQ" DesignTimeRectangle="1695, 168, 49, 53" ElementVisibilityArgument="Interactive" Guid="5a9ce131-4798-4272-97d4-70f4c5e7e0c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAA1CAYAAADoDQMKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVGhD7ZfLaxRBEIfzzwiC4EEQQTwEREUQL4IX8QkhRhTjA8UI4kFRkA0ogoh6CUEwIJ4E8wBBvbgXkUA8CBoEn5mdnc1mH9ndbNm/2p5hA0adqoG00h80G3pneuvrqump9PTsuEP//KD/AC/hCl7CFbyEK3gJV/ASruAlXMFLuELmEu16ler5Z1S+N0SlXD+PhZErtPj2hb0iezKTQPDzt0/R3IG1NLdvzS9HcGgdVR7liJoNe1c2ZCLReJenoG9DEmgpd5Sz0fr+iUdtcpSKl/cmgoXjW2gp+Gzv1qOWaL5/kwSHTCAjK4HAi5f2dGSN9FL0w36jQyWBIOIM1KYe2tk/U757nu8Jz2zLpLRUEtH1wxwMHty0RFf3872Vx7fsjByxROvrRw6icGyzaDeRRZRhcGS9OhtiCewg7yROGyGl4QFeYzE/bmdkiCXiUsKDLaX69AGvISnHbsQS4WAvB6Aphcb0K16jdKPPzsjQSyjg49msgaxqkJeTPV2aH6btTHpwLGONVSsn/DACQF1Lmb95gteoPR+zMzLEEo2Z1xxAeG6nnUlHuxzx8YpjFn9rEEuA4oVdnZ1M8baOid/a+NSikkj6JjPQBP4t8bOAlkWbBaCSAKhnBASR6viInV0BcxyX719Mrte8Y7pRSwB+aSEjJrjCyV6qTYyajvWL/da0KKYdr4wNU9C/sZMB064jc+hq6y+f2KvkZCIBmrMzFJ7e2tnl34zo2sGkBY/bDpxSGjKTiGl9m+XjNzy7nQoDm3gUh3ZzJtoLy+u/u5XXiGQukZZuEWn7seoSQCvihARYVlrm39w0OCMBWMScYGmz4ZSEFC/hCl7CFbyEK3gJV/ASruAl3IDoJ3u0R7pviMg9AAAAAElFTkSuQmCC" InformativeScreenshot="42e6464268be02ffe703a515d72561c3.png" Reference="cWM6iDUoS0uN0zK79p57BQ/Ov7wTEnanE6kHLHPFB2tuw" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ProductosAlkosto]" DelayBefore="3" DisplayName="Extract product data from Alkosto website" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Marca'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Descripcion'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Costo Efectivo'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Costo TC'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.price' name='Column2' attr='fulltext' /&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="603.2,142.4" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="780595bd-461a-403c-8487-a4221ceda0ac" Version="V5">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="alkosto.com/search" CVScreenId="45f3e233-bd98-4f51-8bf8-e77aa1444c84" CvElementArea="912, 543, 395, 66" CvTextArea="1007, 566, 204, 22" CvTextArgument="Mostrar más productos" CvType="Button" DesignTimeRectangle="915, 545, 391, 63" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Mostrar más productos' parentid='js-hits' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Mostrar más productos' parentid='js-hits' tag='BUTTON' type='' class='ais-InfiniteHits-loadMore button-primary button-primary__outline product__listing__load-more js-load-more' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Mostrar más productos' /&gt;" Guid="27dce86c-58b4-402a-9e4b-90f9f0dc6f65" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resultados de la búsqueda &amp;quot;core i5&amp;quot; | Alkosto Hiperahorro' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset X="0" Y="0" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.alkosto.com/search?text=core%20i5" DesignTimeRectangle="526, -13400, 1169, 13760" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='js-hits' tag='OL' /&gt;" Guid="27e08874-2e15-4828-80f4-f5003f3fd00a" InformativeScreenshot="f79cfd2f0061e544761d060ee79fb51b.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Resultados de la búsqueda &amp;quot;core i5&amp;quot; | Alkosto Hiperahorro' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NExtractData.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NExtractData>
+                  <If Condition="[dt_ProductosAlkosto IsNot Nothing AndAlso dt_ProductosAlkosto.Rows.Count &gt; 0]" DisplayName="If  - Verificar si se encontraron productos para guardar" sap:VirtualizedContainerService.HintSize="603.2,1596.8" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="601.6,1241.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log - Productos encontrados" sap:VirtualizedContainerService.HintSize="568,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Productos encontrados: &quot; + dt_ProductosAlkosto.Rows.Count.ToString()]" />
+                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Clear data from a specified Excel sheet" sap:VirtualizedContainerService.HintSize="568,693.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                          <ueab:ExcelProcessScopeX.Body>
+                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,575.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Open Excel and clear sheet data" sap:VirtualizedContainerService.HintSize="500.8,515.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" UseTemplate="True" WorkbookPath="[In_RutaExcel]">
+                                  <ueab:ExcelApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,199.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:ClearRangeX DisplayName="Clear data from the 'Alkosto' Excel sheet" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,139.2" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Alkosto&quot;)]" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelApplicationCard.Body>
+                                </ueab:ExcelApplicationCard>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelProcessScopeX.Body>
+                        </ueab:ExcelProcessScopeX>
+                        <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dt_ProductosAlkosto]" DisplayName="Write extracted product data to an Excel file." sap:VirtualizedContainerService.HintSize="568,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Alkosto" WorkbookPath="[In_RutaExcel]" />
+                        <ui:LogMessage DisplayName="Log - Archivo guardado" sap:VirtualizedContainerService.HintSize="568,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Archivo guardado exitosamente&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="601.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log - Error en extracción" sap:VirtualizedContainerService.HintSize="568,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;No se encontraron productos para: &quot; + In_Consulta]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Firefox" ContentHash="Nu6vujll6Uy1Sz3rMUNOwQ" IconBase64="AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAAAABgAAAAAQAgAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAACde6UwnXunYJ17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXundJ17pVCde6dMnXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p3Cde6f4nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZe6f8mXun/Jl7p/yZe6f8mXun/Jl7p/yZe6f8mXun/Jl7p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/Jl3p/yhf6v8rYer/K2Hq/yth6v8rYer/K2Hq/yth6v8rYer/K2Hq/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/6e99v+/0Pn/vs/5/77P+f++z/n/vs/5/77P+f+/z/n/cZXx/yZe6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZd6f8uY+r/qL73///////////////////////////////////////I1vr/Pm/s/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/Jl7p/yde6f+Jp/P/+vz//////////////////////////////////9vk/P9Meu3/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JFzp/2uR8P/w9P7/////////////////////////////////7PH9/2OL8P8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8kXOn/UX7u/+Do/P/////////////////////////////////3+f//f5/y/yZd6f8mXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVc6f89b+z/ydf6//////////////////////////////////7+//+btfX/KmHq/yZd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/Jl3p/y9k6v+twvf//////////////////////////////////////7fK+P80aOv/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXun/KF/q/4+s9P/7/f//////////////////////////////////0Nz7/0Jy7P8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8kXOn/cZXx//L2/v/////////////////////////////////k6/3/V4Lu/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/Jl7p/yRc6f8jW+n/I1vp/yNb6f8jW+n/I1vp/yVd6f8nXun/J17p/yde6f8nXun/J17p/yRc6f9Wge7/4+v9//////////////////////////////////L1/v9wlPH/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXun/LWLq/2SM8P9ylvH/cZXx/3GV8f9xlfH/cZXx/0Nz7P8lXen/J17p/yde6f8nXun/JVzp/0Bx7P/O2/r/////////////////////////////////+/z//4yp9P8nXun/Jl7p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9rj/P///////v7///7+///+/v///v///3mc8v8jW+n/J17p/yde6f8lXen/Mmbr/7PG+P//////////////////////////////////////qb/3/y5j6v8mXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8jW+n/J17p/yZe6f8pX+r/lbD1//39///////////////////////////////////D0/n/Omzr/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8jW+n/J17p/yVd6f92mfH/9ff+/////////////////////////////////9rj/P9Lee3/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8jW+n/JFzp/1qE7//n7f3/////////////////////////////////6/D9/2KK7/8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3mb8v8gWen/RHTs/9Le+//////////////////////////////////3+f//fZ7y/yVd6f8mXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////5Ku9P81aev/uMr4//////////////////////////////////3+//+Zs/X/KmDq/yZd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////+3y/v/F1Pn/+/z//////////////////////////////////7bI+P8zZ+v/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P//////////////////////////////////////////////////////////////////////z9v7/0Fy7P8lXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P/////////////////////////////////////////////////////////////////j6v3/VYHu/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P////////////////////////////////////////////////////////////P2/v9uk/H/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////////////////////////////////////+3y/v9Xgu7/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P/////////////////////////////////////////////////////////////////F1Pr/N2rr/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P/////////////////////////////////////////////////////////////////+////mLL1/yhf6v8mXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////v7//9zl/P/6+///////////////////////////////////8vX+/2mQ8P8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////4im8/+4yvj//////////////////////////////////////9fi+/9EdOz/JVzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3ia8v9Idu3/3ub8//////////////////////////////////////+vw/f/LmPq/yZd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8gWen/b5Tx//P3/v/////////////////////////////////6+///gKDy/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8iW+n/KV/q/5iz9f/+/v//////////////////////////////////5+39/1WA7v8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8jW+n/JV3p/zZp6//B0fn//////////////////////////////////////8XU+f83auv/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/OGvr/9vk/P///////////////////////////3qc8v8jW+n/J17p/yRc6f9PfO7/4en8//////////////////////////////////////+btPX/KmHq/yZe6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/Mmbr/5qz9f+yxvj/scX3/7HF9/+xxff/scX4/1yG7/8kXOn/J17p/yde6f8lXen/apDw/7HF9/+wxff/sMT3/7DE9/+wxPf/sMT3/7HF+P+juvb/P3Ds/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8oX+r/KF/q/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f0nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6c4nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p2Cde6UQnXunPJ17p/ide6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXunUJ17pTIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAnXumiJ17p+yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun8J17pqSde6fgnXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun7J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXen/JFzp/yNc6f8kXOn/JFzp/yNc6f8lXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/zVp6/+Do/P/ka70/5Gt9P+RrfT/k6/0/2eO8P8oX+r/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZd6f8qYer/nLX1//7+///////////////////k6/3/WIPu/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXun/JV3p/32e8v/3+f//////////////////8fX+/26T8f8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yRc6f9gie//6/D9//////////////////r8//+KqPT/J17p/yZe6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8kXOn/SHft/9ji+///////////////////////p732/y5j6v8mXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/zdq6/+/z/n//////////////////////8LR+f85a+v/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXun/JVzp/yRc6f8kXOn/JFzp/yZd6f8nXun/J17p/yZd6f8sYur/orn2///////////////////////Z4vz/Snjt/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/Jl3p/zJm6/+KqPT/nbb1/5y19f+Zs/X/SHft/yVc6f8mXun/Jl3p/4Oi8//5+v//////////////////6vD9/2CJ7/8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/9/n/P////////////r8//9kjPD/I1vp/yRc6f9ljfD/7fL+//////////////////b4//97nfL/JV3p/yZe6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f87bev/3+f8////////////+vz//2SM8P8hWen/THrt/9zl/P/////////////////9/v//mLL1/ypg6v8mXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/ztt6//f5/z////////////6/P//YYnv/zZp6//E0/n//////////////////////7TH+P8yZuv/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/9/n/P////////////7///+Ur/X/p773///////////////////////N2vr/QHHs/yVc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f87bev/3+f8//////////////////r7///7/P//////////////////4en8/1R/7v8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/ztt6//f5/z//////////////////////////////////////+/z/v9skvD/JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/9/n/P//////////////////////////////////////xNP5/y5k6v8mXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f87bev/3+f8///////////////////////////////////////3+f//dpny/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/ztt6//f5/z////////////9/f//7PH+///////////////////////h6fz/Tnvt/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/9/n/P////////////n6//+Oq/T/3ub8//////////////////////+8zfn/M2fr/yZd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f87bev/3+f8////////////+vz//2KK7/9wlfH/9fj+//////////////////3+//+Oq/T/J17p/yZe6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/ztt6//f5/z////////////6/P//ZIvw/yZe6f+et/b//////////////////////+7y/v9hie//JFzp/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/O23r/9/n/P////////////r8//9kjPD/Ilrp/zhr6//G1Pr//////////////////////9Ld+/9Bcez/JV3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZd6f8wZer/eZvy/4in8/+HpvP/haTz/0Jy7P8lXen/JVzp/0p47f+GpfP/h6bz/4em8/+HpvP/h6bz/0t57f8lXen/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZe6f8kXOn/I1vp/yNb6f8jW+n/Jl3p/yde6f8nXun/JV3p/yNb6f8jW+n/I1vp/yNb6f8jW+n/Jl3p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun3J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p+ide6ZsnXun4J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6fknXumiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAJ17p6yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p7Sde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZd6f8kXOn/I1vp/yRc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZd6f8wZer/Xofv/2aN8P9Tf+7/KV/q/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZe6f8oX+r/j6z0//n6///y9f7/dZjx/yZd6f8nXun/J17p/yde6f8nXun/J17p/yZe6f8mXun/J17p/yde6f8lXOn/cZXx//P2/v/+/v//lrH1/ylg6v8mXun/J17p/yde6f8nXun/J17p/yde6f8sYur/LGLq/yhf6v8kXOn/VoHu/+Tr/f//////ssb4/zFm6/8lXen/J17p/yde6f8nXun/J17p/yZd6f83auv/sMT3/7zN+f9Dc+z/P3Ds/8/b+///////zNn6/z9w7P8lXOn/J17p/yde6f8nXun/J17p/yde6f8lXen/Pm/s/+Pq/f/z9v7/XYfv/7HF+P//////4Oj8/1J+7v8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/z5v7P/i6v3//P3//9Dc+//7/P//8PT+/2uR8P8kXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f8+b+z/4ur8/////////////////5u09f8mXen/Jl7p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8lXen/Pm/s/+Lq/f//////+Pr////////H1vr/OWzr/yVd6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/JV3p/z5v7P/j6v3/8/b+/6O79v/19/7//////5229f8pYOr/Jl7p/yde6f8nXun/J17p/yde6f8nXun/J17p/yVd6f89b+z/3eb8/+3y/v9UgO7/n7j2//r8///u8/7/aY/w/yVc6f8nXun/J17p/yde6f8nXun/J17p/yde6f8mXun/LWLq/1iD7v9dhu//MGXq/zVo6/9eh+//YYrv/0p47f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yZe6f8kXOn/JFzp/yZd6f8mXen/I1vp/yNb6f8lXOn/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p6Sde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p/yde6f8nXun/J17p6wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" InformativeScreenshot="756c2c0d035fe72fbe86579f466d0e1b.png" Reference="cWM6iDUoS0uN0zK79p57BQ/iqqKQ2pb90OZiyoqZJS1fw" Selector="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" Url="https://www.alkosto.com/?fuente=google&amp;medio=cpc&amp;campaign=AK_COL_SEM_PEF_CPC_PB_AON_TLP_TLP_Brand-General-AON_PAC&amp;keyword=alkosto&amp;gad_source=1&amp;gad_campaignid=2018735487&amp;gclid=EAIaIQobChMI25L75c-gkQMVJLBaBR0YJCjPEAAYASAAEgLG8vD_BwE" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="672,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Error crítico en extracción" sap:VirtualizedContainerService.HintSize="638.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Error en ProductosAlkosto: &quot; + exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="672,478.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Interact with Alkosto website and close tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="638.4,418.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="9be19816-8aa0-4a07-98c8-500113d106f8" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,224.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NWindowOperation DisplayName="Window Operation - Close window" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,164.8" sap2010:WorkflowViewState.IdRef="NWindowOperation_1" Operation="Close" ScopeIdentifier="9be19816-8aa0-4a07-98c8-500113d106f8" Version="V5" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Firefox" ContentHash="NaYVlUBPgUO48K5Vk-G2Mg" IconBase64="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" InformativeScreenshot="8e1b2f5c3a69849dcfab567fa9988413.png" Reference="cWM6iDUoS0uN0zK79p57BQ/bgvGZonvYEWC1m9n4T6F2A" Selector="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" Url="https://www.alkosto.com/" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

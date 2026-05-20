@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT js-algolia-site-s…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "WQs8q-VTKk67CdtFz7biJQ",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/WQs8q-VTKk67CdtFz7biJQ",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/iqqKQ2pb90OZiyoqZJS1fw",
+  "Created": "2025-12-03T04:55:01.5148241Z",
+  "Updated": "2025-12-03T04:55:01.5148241Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

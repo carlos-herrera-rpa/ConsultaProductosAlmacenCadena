@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="a09v_rz64EqlFyarf06ocA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/core%20i5" CVScreenId="ea04835b-1a66-46da-b43d-ff8d37e8952a" CvElementArea="797, 296, 23, 22" CvType="CloseButton" DesignTimeRectangle="791, 290, 27, 37" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' /&gt;" Guid="7b80fe80-550a-496a-a53c-5281467c7bf9" ScopeSelectorArgument="&lt;html app='firefox.exe' title='core i5 - Tiendas Jumbo' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ea04835b-1a66-46da-b43d-ff8d37e8952a" CvElementArea="530, 352, 307, 39" CvType="Button" DesignTimeRectangle="513, 277, 340, 127" FuzzySelectorArgument="&lt;webctrl aria-role='alert' tag='DIV' type='' class='vtex-alert flex justify-between t-body c-on-base ph5 pv4 br2 bg-success--faded ' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='No has seleccionado ningún método de entrega aún.&amp;#xA;&amp;#xA;Seleccionar método de entrega' /&gt;" Guid="19e56a42-8e38-44b5-bc28-e33e15f39fda" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="740cbcf1fcc404bb879e51c5e8fa6438.png" xmlns="">0k-zjVdPMs0CGkWbrTXm4JQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

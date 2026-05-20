@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Firefox Mercado Libre Colombia - Envíos Gratis en el día",
+  "Type": "App",
+  "Id": "anIHr8a_GUmzfcnJRbyJwQ",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/anIHr8a_GUmzfcnJRbyJwQ",
+  "Created": "2026-05-12T18:23:30.7943958Z",
+  "Updated": "2026-05-12T18:23:30.7943958Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

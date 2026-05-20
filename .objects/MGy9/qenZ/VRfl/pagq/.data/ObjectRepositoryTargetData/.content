@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wKxxYA5Lt0WBIHgtgzCj8Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/computador%20port%C3%A1til%20asus%20vivobook%2016" CVScreenId="f563a73d-9ed8-4294-b92a-6be9354fed66" CvElementArea="722, 188, 582, 39" CvType="InputBox" DesignTimeRectangle="723, 192, 579, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='vtex-styleguide-9-x-input ma0 border-box vtex-styleguide-9-x-hideDecorators vtex-styleguide-9-x-noAppearance br2  br-0 br--left  w-100 bn outline-0 bg-base c-on-base b--muted-4 hover-b--muted-3 t-body pl5 ' placeholder='¿Qué estás buscando?' aaname='¿Qué estás buscando?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="41d0d5a5-3277-4d5d-9599-11023f5843ac" ScopeSelectorArgument="&lt;html app='firefox.exe' title='computador portátil asus vivobook 16 - Tiendas Jumbo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9c84fc6d544db462eaca0d78bd56b664.png" xmlns="">02L_tuS1OgkWHxWnid_WA4g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

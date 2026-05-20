@@ -1,0 +1,35 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|MtMaH1CI9Zqui7J6MyeSLn3tMbw440JTjMaSDHCgc",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Marca",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Descripcion",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Costo Efectivo",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|cLPJ6WcbQM11JvBxuPMsBV63xE5BEVso5HWv1aUgs",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M2k6rbyMTkubTMDjVCsVgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="alkosto.com" DesignTimeRectangle="1707, 183, 28, 27" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;i' parentid='algoliaAutocompletev2' tag='I' /&gt;" Guid="b81592c0-bfd8-40ce-9d40-8436b5c1bf7c" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Alkosto Hiperahorro | Orgullosamente Colombiano' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c159ef40aa3e861c67551b2b2be811d9.png" xmlns="">0yaMGxEmAj0Gsk2xIBtEpLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">KeyboardTrigger</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

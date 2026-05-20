@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fvKtjOwB00mmhUP-2k_-yg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exito.com" CVScreenId="e45bda02-569f-42bb-975e-8f87414c02a0" CvElementArea="458, 127, 484, 44" CvType="InputBox" DesignTimeRectangle="458, 128, 485, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" Guid="5a96f7b0-06f6-4abc-b2df-b7f260c55425" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b11cd517-a325-48e9-908f-f6c4ca5859cb" CvTextArea="476, 140, 187, 18" CvTextArgument="Buscar en exito.com" CvType="Text" DesignTimeRectangle="476, 140, 187, 18" ElementType="Text" Guid="2f18fc77-d085-4fd9-8858-d5965fc18997" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f7a7986d5ca0c6a61aec3fca7fd5b6a3.png" xmlns="">0t7rKUcTSAESkAyTEGBanjw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

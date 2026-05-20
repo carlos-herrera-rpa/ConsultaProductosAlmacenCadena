@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Firefox Alkosto Hiperahorro  Orgullosamente Colombiano",
+  "Type": "App",
+  "Id": "cD6JOK91OEGxCGpCtqH3oQ",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/cD6JOK91OEGxCGpCtqH3oQ",
+  "Created": "2025-12-02T04:18:46.3573884Z",
+  "Updated": "2025-12-02T04:18:46.3573884Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Firefox Alkosto Hiperahorro  Orgullosamente C(1)",
+  "Type": "Screen",
+  "Id": "iqqKQ2pb90OZiyoqZJS1fw",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/iqqKQ2pb90OZiyoqZJS1fw",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/ul1fPxm7KEShj94BcIXEog",
+  "Created": "2025-12-03T04:53:36.1952196Z",
+  "Updated": "2025-12-03T04:53:36.1952196Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

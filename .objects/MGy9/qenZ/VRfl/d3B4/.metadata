@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Close",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "d3B4Q_6iG0CAxiZTDB_eAA",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/d3B4Q_6iG0CAxiZTDB_eAA",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/VRflTJnSb02fD_FfH4nrmQ",
+  "Created": "2025-12-01T02:04:44.4690551Z",
+  "Updated": "2025-12-01T02:04:44.4690551Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

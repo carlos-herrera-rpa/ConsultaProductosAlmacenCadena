@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="CPfdr2K9zE6mnzn6r83HYw" Reference="cWM6iDUoS0uN0zK79p57BQ/XDouBeSRx0uYlIvy9aAkxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1048" BrowserType="Firefox" ContentHash="lktfSeiCdUOsDN-I5wJFXg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC1klEQVQ4TzWTSWtUWxSFv3O7qlhVWjYxUZ4+wfeIooigICKI4B/wH2RkBsoDnegTsXvOnPgXHIsTBXUsNkhEbBDiILalSayQTlPdbc5xnUre5Z7b7LPP2mvvvbZxX4ccYUqWLIPJiYsArNW3A332AkOv2Merl3s4/c9tPn7P6fQAbfvLuKl1zh+0Qao/S6CzuBUAq8Mpa2lMb+XihQnuPoR09eDKcbl153ChNURpsmrKFbnoR88ZoPG9xsUrTe49EG4c0c49Q7narE/DdARQMkJqh/oXiJWDv5zebj3N6YTRsUmev4OO/HomlrMnmBGKjcmnxaAcU7RkyLQZDsOC3jNi0hbQ5kE+fS44dfk1jz9ASyYfol6BwfUeaEbJhjG2yLWxFSaqTN1/z+RL5duByhDsOjpCs7qTMzceMP4JugI4fgz+PTeKyZqhc84QmzUwvZmJa5PMPoNotZY+WkuRDoyNsDg8wMn/XjM0Ateu72XTYKDUZ3wNSgR5lfYTy5tLC1S/VVSKAKs8SyZlaY2qdlj3+YM0WcRtLKjV5zDmpxhM4SJfmG6db3dm+XBTaS/VKVxIUg7p5Iv06im//hDtC3rsN9jyD3U6xYieaqBeFALo1ek+6vHi+k82zA2owhVyCarHMu1aSrIfDp1Vgf+eg5pa6PXgu+CaJUeuvqQD8LHK+NUG2VtYWyREtqzeW+YrywyfgL/GtsO6GSh70f0P8KMqBmqZlQ5ag/DUMX7rC92GTJJsJNxtRwx/ju5QdNXfLMiod+T596UsAGmOQLRMDea1vmZ0Gi1mm7/YsnsD8ZCchz2ahOETl95dUuDHRjVIHM5LVysqK5WSlm+iQvcptMk1bMZIaH3aekilNrIrANm8L6L8Ch0yAjCel1amAcs7WNXXSbOxL5rMuTL1AxfkCmQT6WBJbVQGceaHSQCBPNOWUC1GpqxPUwH8APnxVhwPEHel5aLMbygsQXCIFy6OAAAAAElFTkSuQmCC" Reference="cWM6iDUoS0uN0zK79p57BQ/XDouBeSRx0uYlIvy9aAkxw" Selector="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" Url="https://www.exito.com/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="35b361b38def564b91b1010c162d394b.png" xmlns="">0V22U6k0I3Uyw4ow5POK6tg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

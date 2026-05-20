@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Firefox exito.com  exito.com(1)",
+  "Type": "Screen",
+  "Id": "XDouBeSRx0uYlIvy9aAkxw",
+  "Reference": "cWM6iDUoS0uN0zK79p57BQ/XDouBeSRx0uYlIvy9aAkxw",
+  "ParentRef": "cWM6iDUoS0uN0zK79p57BQ/qenZ48YXtkWcF5ZmWvXNDg",
+  "Created": "2026-05-07T20:00:05.7272315Z",
+  "Updated": "2026-05-07T20:00:05.7272315Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

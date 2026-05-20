@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VHZmRSugVEe-K1qdIWKoNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="exito.com" CVScreenId="0e593bc7-3e11-412b-8ea2-999a371ddfa8" CvElementArea="1530, 961, 199, 49" CvTextArea="1599, 977, 60, 20" CvTextArgument="Acepto" CvType="Button" DesignTimeRectangle="1533, 964, 193, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Acepto' parentid='__next' tag='BUTTON' /&gt;" Guid="db8c1c1e-e29f-432d-8f41-8b5452365353" ScopeSelectorArgument="&lt;html app='firefox.exe' title='exito.com | exito.com' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="9, 932, 1899, 107" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='SECTION' class='styles_fsCookiesModal__0jD9C' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Manejo de cookies&amp;#xA;&amp;#xA;Al continuar navegando por el sitio web, aceptas el uso de cookies propias y de terceros con el fin de identificar tus patrones de navegación, realizar personalizaciones de contenido y mostrarte publicidad de acuerdo a tus preferencias. Para conocer más, accede a nuestra política de cookies.&amp;#xA;&amp;#xA;Acepto' /&gt;" Guid="7d9e6559-5d1f-40d6-9f0b-1e1b5a777f47" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Y="3" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="09640575694853aa1409615815092822.png" xmlns="">0MqEN_wOzM0mEqQ7pQ-A7_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

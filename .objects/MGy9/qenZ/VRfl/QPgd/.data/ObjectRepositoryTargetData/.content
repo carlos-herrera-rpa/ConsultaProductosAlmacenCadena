@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VbzXttz-xkuO9fHi2LUCIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="jumbocolombia.com/core%20i5" CVScreenId="6dc3215e-306f-4ddc-91f3-aa6bf5839b41" CvElementArea="1429, 119, 19, 21" CvType="ArrowButton" DesignTimeRectangle="1429, 121, 19, 18" ElementType="ArrowButton" ElementVisibilityArgument="Interactive" Guid="7d134d52-776a-45e5-9157-01ee045b3c4d" ScopeSelectorArgument="&lt;html app='firefox.exe' title='core i5 - Tiendas Jumbo' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dc3215e-306f-4ddc-91f3-aa6bf5839b41" CvElementArea="991, 151, 54, 32" CvType="Button" DesignTimeRectangle="1008, 156, 14, 14" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" Guid="21078ebc-64ad-4fde-ae5e-2e64080a4e05" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b7287bc28aacbdac798ee15e4875bc46.png" xmlns="">00TVyqPE9GUOIPb1QftIE0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
